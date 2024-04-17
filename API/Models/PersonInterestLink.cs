@@ -2,11 +2,16 @@
 
 namespace API.Models
 {
-  public class PersonInterestLink
-  {
-    public int Id { get; set; }
+    public class PersonInterestLink
+    {
+        // Property to store the unique identifier of the link between a person and an interest
+        public int Id { get; set; }
 
-    public virtual Person Person { get; set; }
-    public virtual Interest Interest { get; set; }
-  }
+        // Navigation property representing the person associated with this link
+        public virtual Person Person { get; set; }
+
+        // Navigation property representing the interest associated with this link
+        public virtual Interest Interest { get; set; }
+    }
+
 }
