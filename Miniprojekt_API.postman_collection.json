@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "ebedab94-3770-4899-b2e7-3b910e0bbd06",
+		"name": "K3: Miniprojekt: API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9313335"
+	},
+	"item": [
+		{
+			"name": "Get persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7152/persons",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7152",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Interest To Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7152/persons/1/interests",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7152",
+					"path": [
+						"persons",
+						"1",
+						"interests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get links of a person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7152/persons/1/links",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7152",
+					"path": [
+						"persons",
+						"1",
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Interest to a person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"interestid\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7152/persons/1/interest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7152",
+					"path": [
+						"persons",
+						"1",
+						"interest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Links to a person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"links\": [\n    { \"url\": \"www.chasacademy.se\" },\n    { \"url\": \"www.gmail.se\" }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7152/persons/1/interests/1/links",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7152",
+					"path": [
+						"persons",
+						"1",
+						"interests",
+						"1",
+						"links"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
